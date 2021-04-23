@@ -1,0 +1,38 @@
+.div-mypost-main {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-between;
+  justify-content: space-between;
+  gap: 20px;
+}
+.my-post-item {
+  position: relative;
+  width: 293px;
+  height: 293px;
+}
+.div-post-data-main {
+  display: none;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+.FFVAD:hover + .div-post-data-main {
+  display: block;
+
+}
+.div-post-data-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    color: white;
+    
+}
+.span-data{
+    margin: 10px;
+}
