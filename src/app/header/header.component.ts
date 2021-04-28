@@ -21,13 +21,9 @@ export class HeaderComponent implements OnInit {
   @HostListener('document:click', ['$event'])
   clickout() {
     this.showNoti = false;
-    console.log(this.showNoti);
-  }
-  
-  clickit() {
-    this.showNoti = !this.showNoti;
-    console.log(this.showNoti);
   }
 
- 
+  clickit() {
+    this.showNoti = !this.showNoti;
+  }
 }

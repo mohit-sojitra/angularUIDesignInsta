@@ -1,0 +1,15 @@
+<div style="margin-top: 60px">
+  <form action="" [formGroup]="Myform" (ngSubmit)="onSubmit()">
+    <div class="container">
+      <label for="email">Email</label>
+      <input type="text" name="" id="" formControlName="email" />
+      <label for="password">Password</label>
+      <input type="password" formControlName="password" />
+      <div formArrayName="hobby">
+        <div *ngFor="let item of hobby.controls; let i = index">
+          <input type="text" [formControlName]="i" />
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

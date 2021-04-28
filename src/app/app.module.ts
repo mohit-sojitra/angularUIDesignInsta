@@ -9,6 +9,10 @@ import { DirectComponent } from './direct/direct.component';
 import { ProfileComponent } from './profile/profile.component';
 import { MypostsComponent } from './myposts/myposts.component';
 import { MyigtvComponent } from './myigtv/myigtv.component';
+import { DndDirective } from './drag-drop/dnd.directive';
+import { DragDropComponent } from './drag-drop/drag-drop.component';
+import { LoginComponent } from './login/login.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,9 +22,13 @@ import { MyigtvComponent } from './myigtv/myigtv.component';
     DirectComponent,
     ProfileComponent,
     MypostsComponent,
-    MyigtvComponent
+    MyigtvComponent,
+    DndDirective,
+    DragDropComponent,
+    LoginComponent
   ],
   imports: [
+    ReactiveFormsModule,
     BrowserModule,
     AppRoutingModule
   ],
